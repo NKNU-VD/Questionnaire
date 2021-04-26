@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>好勒好勒</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+
+<body>
+
+    <!--    <div class="wrap">-->
+    <div class="title">
+        <div class="title_pic"></div>
+    </div>
+
+    <div class="all_question">
+        <!--       媒體1-->
+        <div class="question_area 1" id="Q1">
+            <div class="question_title">
+                <img src="pic/question/1.png" alt="">
+            </div>
+            <div class="question_pic">
+                <img src="pic/illustrate/q1.png" width="360" height="360" alt="">
+            </div>
+            <div class="option">
+                <div class="a 1a">
+                    <img src="pic/ans/愛情A1-1.png" id="1_1" onclick="setValue(1,0);change(1,1)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="b 1b ">
+                    <img src="pic/ans/愛情A1-2.png" id="1_2" onclick="setValue(1,1);change(1,2)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="c 1c">
+                    <img src="pic/ans/愛情A1-3.png" id="1_3" onclick="setValue(1,2);change(1,3)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="prenext_btn">
+                    <div class="pre_que">
+                        <a href="#Q1">
+                            <input type="button" style="background-image: url(pic/others/pre.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+                        </a>
+                    </div>
+                    <div class="next_que">
+                        <a href="#Q2">
+                            <input type="button" style="background-image: url(pic/others/next.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--教育1-->
+        <div class="question_area 2" id="Q2">
+            <div class="question_title">
+                <img src="pic/question/2.png" alt="">
+            </div>
+            <div class="question_pic">
+                <img src="pic/illustrate/q2.png" width="360" height="360" alt="">
+            </div>
+            <div class="option">
+                <div class="a 2a">
+                    <img src="pic/ans/愛情A2-1.png" id="2_1" onclick="setValue(2,0);change(2,1)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="b 2b">
+                    <img src="pic/ans/愛情A2-2.png" id="2_2" onclick="setValue(2,1);change(2,2)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="c 2c">
+                    <img src="pic/ans/愛情A2-3.png" id="2_3" onclick="setValue(2,2);change(2,3)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+            </div>
+            <div class="prenext_btn">
+                <div class="pre_que">
+                    <a href="#Q1">
+                        <input type="button" style="background-image: url(pic/others/pre.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+               </a> </div>
+                <div class="next_que"><a href="#Q3">
+                    <input type="button" style="background-image: url(pic/others/next.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+                 </a></div>
+            </div>
+        </div>
+        <!--同儕1-->
+        <div class="question_area 3" id="Q3">
+            <div class="question_title">
+                <img src="pic/question/3.png" alt="">
+            </div>
+            <div class="question_pic">
+                <img src="pic/illustrate/q3.png" width="360" height="360" alt="">
+            </div>
+            <div class="option">
+                <div class="a 3a">
+                    <img src="pic/ans/愛情A3-1.png" id="3_1" onclick="setValue(3,0);change(3,1)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="b 3b">
+                    <img src="pic/ans/愛情A3-2.png" id="3_2" onclick="setValue(3,1);change(3,2)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="c 3c">
+                    <img src="pic/ans/愛情A3-3.png" id="3_3" onclick="setValue(3,2);change(3,3)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+            </div>
+            <div class="prenext_btn">
+                <div class="pre_que"> <a href="#Q2">
+                    <input type="button" style="background-image: url(pic/others/pre.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+               </a> </div>
+                <div class="next_que"><a href="#Q4">
+                    <input type="button" style="background-image: url(pic/others/next.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--社群1-->
+        <div class="question_area 4" id="Q4">
+            <div class="question_title">
+                <img src="pic/question/4.png" alt="">
+            </div>
+            <div class="question_pic">
+                <img src="pic/illustrate/q4.png" width="360" height="360" alt="">
+            </div>
+            <div class="option">
+                <div class="a 4a">
+                    <img src="pic/ans/愛情A4-1.png" id="4_1" onclick="setValue(4,0);change(4,1)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="b 4b">
+                    <img src="pic/ans/愛情A4-2.png" id="4_2" onclick="setValue(4,1);change(4,2)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="c 4c">
+                    <img src="pic/ans/愛情A4-3.png" id="4_3" onclick="setValue(4,2);change(4,3)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+            </div>
+            <div class="prenext_btn">
+                <div class="pre_que"><a href="#Q3">
+                    <input type="button" style="background-image: url(pic/others/pre.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+                    </a>
+                </div>
+                <div class="next_que"><a href="#Q5">
+                    <input type="button" style="background-image: url(pic/others/next.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--家庭1-->
+        <div class="question_area 5" id="Q5">
+            <div class="question_title">
+                <img src="pic/question/5.png" alt="">
+            </div>
+            <div class="question_pic">
+                <img src="pic/illustrate/q5.png" width="360" height="360" alt="">
+            </div>
+            <div class="option">
+                <div class="a 5a">
+                    <img src="pic/ans/愛情A5-1.png" id="5_1" onclick="setValue(5,0);change(5,1)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="b 5b">
+                    <img src="pic/ans/愛情A5-2.png" id="5_2" onclick="setValue(5,1);change(5,2)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="c 5c">
+                    <img src="pic/ans/愛情A5-3.png" id="5_3" onclick="setValue(5,2);change(5,3)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+            </div>
+            <div class="prenext_btn">
+                <div class="pre_que"><a href="#Q4">
+                    <input type="button" style="background-image: url(pic/others/pre.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+              </a>  </div>
+                <div class="next_que"><a href="#Q6">
+                    <input type="button" style="background-image: url(pic/others/next.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--媒體2-->
+        <div class="question_area 6" id="Q6">
+            <div class="question_title">
+                <img src="pic/question/6.png" alt="">
+            </div>
+            <div class="question_pic">
+                <img src="pic/illustrate/q6.png" width="360" height="360" alt="">
+            </div>
+            <div class="option">
+                <div class="a 6a">
+                    <img src="pic/ans/愛情A6-1.png" id="6_1" onclick="setValue(6,0);change(6,1)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="b 6b">
+                    <img src="pic/ans/愛情A6-2.png" id="6_2" onclick="setValue(6,1);change(6,2)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+                <div class="c 6c">
+                    <img src="pic/ans/愛情A6-3.png" id="6_3" onclick="setValue(6,2);change(6,3)" width='480' height='60' style="background-repeat: no-repeat;" data-type="1a">
+                </div>
+            </div>
+            <div class="prenext_btn" style="margin-top:3%;padding-bottom:3%">
+                <input type="button" onclick="count()" style="background-image: url(pic/others/send.png);width: 171px;height: 56px; border: none; background-color: transparent;background-repeat: no-repeat;">
+            </div>
+        </div>
+    </div>
+    <script>
+        var result1 = 0;
+        var result2 = 0;
+        var Q1_ans = 0;
+        var Q2_ans = 0;
+        var Q3_ans = 0;
+        var Q4_ans = 0;
+        var Q5_ans = 0;
+        var Q6_ans = 0;
+        function setValue(q, num) {
+            if (q == 1) {
+                Q1_ans = num;
+            } else if (q == 2) {
+                Q2_ans = num;
+            } else if (q == 3) {
+                Q3_ans = num;
+            }
+            else if (q == 4) {
+                Q4_ans = num;
+            } else if (q == 5) {
+                Q5_ans = num;
+            } else if (q == 6) {
+                Q6_ans = num;
+            }
+        }
+        function count() {
+            result1 = Q1_ans + Q2_ans + Q3_ans;
+            result2 = Q4_ans + Q5_ans + Q6_ans;
+            if (result1 <= 2) {
+                alert('I');
+            }
+            else if (result1 >= 3 && result1 <= 4) {
+                alert('E');
+            }
+            else {
+                alert('H');
+            }
+            if (result2 <= 2) {
+                alert('I');
+            }
+            else if (result2 >= 3 && result2 <= 4) {
+                alert('D');
+            }
+            else {
+                alert('A');
+            }
+        }
+        function change(q, num) {
+            if (num == 1) {
+                document.getElementById(q + "_1").src = "pic/ans/愛情變色A" + q + "-1.png";
+                document.getElementById(q + "_2").src = "pic/ans/愛情A" + q + "-2.png";
+                document.getElementById(q + "_3").src = "pic/ans/愛情A" + q + "-3.png";
+            } else if (num == 2) {
+                document.getElementById(q + "_1").src = "pic/ans/愛情A" + q + "-1.png";
+                document.getElementById(q + "_2").src = "pic/ans/愛情變色A" + q + "-2.png";
+                document.getElementById(q + "_3").src = "pic/ans/愛情A" + q + "-3.png";
+            } else if (num == 3) {
+                document.getElementById(q + "_1").src = "pic/ans/愛情A" + q + "-1.png";
+                document.getElementById(q + "_2").src = "pic/ans/愛情A" + q + "-2.png";
+                document.getElementById(q + "_3").src = "pic/ans/愛情變色A" + q + "-3.png";
+            }
+
+        }
+    </script>
+
+</body>
+</html>
