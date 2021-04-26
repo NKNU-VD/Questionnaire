@@ -92,11 +92,39 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HA.html" />
+    <Content Include="index-友情.html" />
+    <Content Include="index-愛情.html" />
+    <Content Include="index-親情.html" />
+    <Content Include="友情解答GC.html" />
+    <Content Include="友情解答GI.html" />
+    <Content Include="友情解答HC.html" />
+    <Content Include="友情解答HI.html" />
+    <Content Include="友情解答IC.html" />
+    <Content Include="友情解答II.html" />
+    <Content Include="愛情解答EA.html" />
+    <Content Include="愛情解答ED.html" />
+    <Content Include="愛情解答EI.html" />
+    <Content Include="愛情解答HA.html" />
+    <Content Include="愛情解答HD.html" />
+    <Content Include="愛情解答HI.html" />
+    <Content Include="愛情解答IA.html" />
+    <Content Include="愛情解答ID.html" />
+    <Content Include="愛情解答II.html" />
     <Content Include="index.html" />
     <Content Include="question.html" />
     <Content Include="Web.config" />
     <Content Include="友情.html" />
     <Content Include="親情.html" />
+    <Content Include="親情解答EA.html" />
+    <Content Include="親情解答EB.html" />
+    <Content Include="親情解答EI.html" />
+    <Content Include="親情解答FA.html" />
+    <Content Include="親情解答FB.html" />
+    <Content Include="親情解答FI.html" />
+    <Content Include="親情解答IA.html" />
+    <Content Include="親情解答IB.html" />
+    <Content Include="親情解答II.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />

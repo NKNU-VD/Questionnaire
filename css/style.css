@@ -9,17 +9,17 @@
     background-repeat: repeat;
 }
 */
-html,
+
 body {
-/*    background-image: url(..//pic/others/背景-05.png);
-*/    height: 100%;
+    background-image: url(../pic/others/背景.png);
+    height: 100%;
     width: 100%;
 }
 
 .title {
-    height: 170px;
+    height: 100px;
     width: 100%;
-    position: fixed;
+   
 }
 
 .title_pic {
@@ -38,8 +38,8 @@ body {
 .question_area {
     height: 1000px;
     width: 100%;
-    padding-top: 170px;
-    box-sizing: border-box;
+/*    padding-top: 170px;
+*/    box-sizing: border-box;
     /*    height: 1024px;*/
     /*        margin-top: 170px;*/
 
